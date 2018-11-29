@@ -12,10 +12,15 @@ function addExcitement (theWordArray) {
     let buildMeUp = ""
 
     for (let i = 0; i < theWordArray.length; i++) {
+        if (i >= 3 && i % 3 === 0){
+        buildMeUp += sentence[i] + "! ";
+        } else {
         // Concatenate the new word onto buildMeUp
         buildMeUp += sentence[i] + " ";
+        }
         // Print buildMeUp to the console
         console.log(buildMeUp)
+        co
     }
 
 }
